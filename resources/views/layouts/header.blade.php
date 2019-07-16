@@ -51,7 +51,29 @@
                             <p>Dashboard</p>
                         </a>
                     </li>
+                    <li @if (\Request::is('/debtors')) class="active" @endif>
+                        <a href="{{ url('/') }}">
+                        <i class="ti-view-list-alt"></i>
+                            <p>Debtors</p>
+                        </a>
+                    </li>
+                    <li @if (\Request::is('/cheques')) class="active" @endif>
+                        <a href="{{ url('/') }}">
+                        <i class="ti-money"></i>
+                            <p>Cheques</p>
+                        </a>
+                    </li>
+                    <li @if (\Request::is('/reports')) class="active" @endif>
+                        <a href="{{ url('/') }}">
+                        <i class="ti-map"></i>
+                            <p>Reports</p>
+                        </a>
+                    </li>
+
                 </ul>
+
+
+                
 
 
 @else
